@@ -1,11 +1,20 @@
 meta {
   name: AtualizarClienteID
   type: http
-  seq: 5
+  seq: 4
 }
 
 put {
-  url: 
-  body: none
+  url: http://localhost:3333/client/aca131ab-b8db-40d2-af6c-d0a34739f1df
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "nome": "Bruno",
+      "email": "bruno@hotmail.com",
+      "telefone": "73 11111-7777"
+      
+    }
 }

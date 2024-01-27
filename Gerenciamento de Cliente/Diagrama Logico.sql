@@ -1,3 +1,8 @@
+
+
+## Link para acessa o Diagrama
+## https://dbdiagram.io/d/Sistema-de-Gerenciamento-Cliente-65b47086ac844320aed32fdd
+
 CREATE TABLE "clientes" (
   "id" integer PRIMARY KEY,
   "nome" varchar,

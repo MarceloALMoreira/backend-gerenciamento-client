@@ -1,11 +1,13 @@
 const Router = require("express");
 const ClientController = require("../controllers/ClientController");
 
-const routes =  Router();
+const routes = Router();
 
+routes
+  .post("/client", ClientController.createClient)
+  .get("/client", ClientController.listClient)
+  .get("/client/byNome", ClientController.listclientByNome)
+  .put("/client/:id", ClientController.updateClientID)
+  .delete("/client/:id", ClientController.deleteClientID);
 
-routes.post('/client', ClientController.store)
-
-
-
-module.exports = routes
+module.exports = routes;
