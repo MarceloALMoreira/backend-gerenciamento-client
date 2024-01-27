@@ -1,0 +1,26 @@
+meta {
+  name: CriarCliente
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/client
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+    "nome": "Marcelo",
+    "email": "marcelo@hotmail.com",
+    "telefone": "73 981221850"
+  },
+   {
+    "nome": "Marcelo",
+    "email": "marcelo@hotmail.com",
+    "telefone": "73 981221850"
+  }
+  ]
+}
